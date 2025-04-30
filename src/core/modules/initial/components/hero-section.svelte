@@ -25,7 +25,7 @@
 			class="relative px-4 gap-3 lg:px-0 pt-[50vh] lg:pt-0 z-50 flex w-full flex-col items-center justify-between text-white lg:flex-row"
 		>
 			<div class="text-center lg:text-left lg:w-[30%]">
-				<h1 class="text-4xl lg:text-2xl font-bold mb-4">Luana Michelly a nova rainha do carnaval!</h1>
+				<h1 class="text-4xl lg:text-5xl font-bold mb-4 text-white lg:text-amber-400 italic">“Vem Sambar, O Samba Cura!”</h1>
 				<p class="text-sm p-2 max-w-[362px] mx-auto lg:max-w-none bg-amber-950/50 rounded-xl">
 					Eu sou Luana Micheli, a Musa da Escola de samba de Colorado do Bras do Carnaval São Paulo
 					e Rainha de Bateria da Escola de samba Saudosa Maloca do grupo UESP.
@@ -51,12 +51,12 @@
 					Luana Michelly sambista desde 1990, é uma professora a mais de x anos na escola de samba,
 					com seu método de ensino e com sua íncrivel frase:
 				</p>
-				<p class="text-2xl font-bold text-amber-400 italic">"Todas nós somos Rainha e Musas"</p>
+				<p class="text-2xl font-bold text-amber-400 italic">“Todas nós somos Rainha e Musas”</p>
 			</div>
 		</div>
 
 		<img
-			class="absolute top-0 z-30 left-1/2 -translate-x-1/2"
+			class="absolute top-0 z-30 max-w-[404px] lg:max-w-none left-1/2 -translate-x-1/2"
 			src="/hero-highlight.png"
 			alt=""
 			fetchpriority="high"
@@ -66,7 +66,7 @@
 
 		<!-- svelte-ignore element_invalid_self_closing_tag -->
 		<div
-			class="absolute bottom-0 left-0 min-h-[96px] w-full bg-linear-to-b from-transparent to-black to-50%"
+			class="absolute bottom-0 left-0 min-h-[96px] w-full bg-linear-to-b from-transparent to-black to-50% lg:z-40"
 		/>
 	</div>
 </section>

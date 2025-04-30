@@ -1,5 +1,5 @@
 <footer class="bg-amber-400 py-[36px] text-black">
-	<div class="mx-auto flex max-w-[1280px] justify-between">
+	<div class="mx-auto flex flex-wrap px-4 lg:px-0 max-w-[1280px] justify-between">
 		<p>© Copyright 2025 Luana Michelly. All rights reserved.</p>
 		<p>
 			Developed by <a

@@ -67,7 +67,7 @@
 	];
 </script>
 
-<section class="bg-black py-[96px] text-white">
+<section id="health" class="bg-black py-[96px] text-white">
 	<div class="mx-auto max-w-[1280px] px-4 text-center lg:px-0">
 		<figure class="inline-block w-[128px] lg:w-auto">
 			<img src="/samba-health.svg" alt="" />

@@ -1,4 +1,4 @@
-<section class="bg-black py-[96px] text-white">
+<section id="about" class="bg-black py-[96px] text-white">
     <div
         class="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-10 px-4 lg:flex-row lg:px-0"
     >
