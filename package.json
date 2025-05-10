@@ -43,6 +43,7 @@
     "vitest": "^3.0.0"
   },
   "dependencies": {
+    "@iconify/svelte": "^5.0.0",
     "swiper": "^11.2.6",
     "video.js": "^8.22.0"
   }

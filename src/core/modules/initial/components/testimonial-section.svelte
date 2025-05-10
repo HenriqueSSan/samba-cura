@@ -1,5 +1,7 @@
-<script>
-	import { tick } from 'svelte';
+<script lang="ts">
+	import { onMount, tick } from 'svelte';
+
+	import Icon from '@iconify/svelte';
 
 	import 'swiper/css';
 	import 'swiper/css/pagination';
@@ -8,6 +10,16 @@
 	import { Swiper } from 'swiper';
 	import { Autoplay, Grid, Pagination } from 'swiper/modules';
 
+	const slides = $state([
+		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
+		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
+		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
+		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
+		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' }
+	]);
+
+	let slideListRef: HTMLVideoElement[] | null[] = [];
+
 	$effect.pre(() => {
 		tick().then(() => {
 			new Swiper('.swiper', {
@@ -15,7 +27,7 @@
 				modules: [Pagination, Autoplay, Grid],
 				slidesPerView: 4,
 				loop: true,
-				autoHeight: true,
+				// autoHeight: true,
 				spaceBetween: 12,
 
 				pagination: {
@@ -57,11 +69,11 @@
 	});
 </script>
 
-<section class="py-[96px] px-4 lg:px-0 text-black">
+<section class="px-4 py-[96px] text-black lg:px-0">
 	<div class="mx-auto max-w-[1280px] text-center">
 		<h2 class="mb-6 text-5xl font-bold text-amber-400 italic">"Veja agora quem vai sambar"</h2>
 
-		<p class="mx-auto mb-6 lg:w-[53%] max-w-[710px] text-2xl">
+		<p class="mx-auto mb-6 max-w-[710px] text-2xl lg:w-[53%]">
 			Abaixo estão algumas de minhas alunas que fazem parte do meu método de ensino sobre o samba.
 		</p>
 
@@ -71,39 +83,52 @@
 			<div class="swiper-wrapper pb-[56px]">
 				<!-- Slides -->
 
-				<div class="swiper-slide">
-					<div class="min-h-[468px] w-full grow rounded-xl border-2 border-amber-400 bg-black">
-						<div class=""></div>
-					</div>
-				</div>
+				{#each slides as slideItem, index}
+					<div class="swiper-slide">
+						<div
+							class="relative min-h-[486px] w-full grow rounded-2xl border-2 border-amber-400 bg-black"
+						>
+							<!-- svelte-ignore a11y_media_has_caption -->
+							<video
+								bind:this={slideListRef[index]}
+								class="h-full w-full rounded-xl object-fill [&::-webkit-media-controls-timeline]:hidden"
+								loop
+								poster={slideItem.poster}
+								src={slideItem.source}
+								playsinline
+								controls={false}
+								controlslist="noplay notimeline nodownload nofullscreen noremoteplayback noplaybackrate track"
+								preload="none"
+							></video>
+							<!-- svelte-ignore a11y_click_events_have_key_events -->
+							<!-- svelte-ignore a11y_no_static_element_interactions -->
+							<div
+								onclick={() => {
+									if (slideListRef[index]) {
+										if (!slideItem.played) {
+											slideItem.played = true;
 
-				<div class="swiper-slide">
-					<div class="min-h-[468px] w-full grow rounded-xl border-2 border-amber-400 bg-black">
-						<div class=""></div>
-					</div>
-				</div>
+											return slideListRef[index].play();
+										}
 
-				<div class="swiper-slide">
-					<div class="min-h-[468px] w-full grow rounded-xl border-2 border-amber-400 bg-black">
-						<div class=""></div>
-					</div>
-				</div>
+										slideItem.played = false;
 
-				<div class="swiper-slide">
-					<div class="min-h-[468px] w-full grow rounded-xl border-2 border-amber-400 bg-black">
-						<div class=""></div>
+										return slideListRef[index].pause();
+									}
+								}}
+								class={`absolute top-1/2 rounded-xl left-1/2 flex h-full w-full -translate-1/2 items-center justify-center ${!slideItem.played ? "bg-black/50" : "bg-black/0"}`}
+							>
+								{#if !slideItem.played}
+									<button
+										class="flex items-center justify-center rounded-xl bg-amber-400 px-6 py-4 text-[20px] text-white"
+									>
+										<Icon icon="mingcute:play-fill" />
+									</button>
+								{/if}
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="min-h-[468px] w-full grow rounded-xl border-2 border-amber-400 bg-black">
-						<div class=""></div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="min-h-[468px] w-full grow rounded-xl border-2 border-amber-400 bg-black">
-						<div class=""></div>
-					</div>
-				</div>
+				{/each}
 			</div>
 			<!-- If we need pagination -->
 			<div class="swiper-pagination"></div>
