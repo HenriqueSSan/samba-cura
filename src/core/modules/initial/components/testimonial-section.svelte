@@ -61,7 +61,15 @@
 							fill: 'row',
 							rows: 1
 						}
-					}
+					},
+
+					1280: {
+						slidesPerView: 4,
+						grid: {
+							fill: 'row',
+							rows: 1
+						}
+					},
 				},
 				autoplay: { delay: 3000, pauseOnMouseEnter: true }
 			});
