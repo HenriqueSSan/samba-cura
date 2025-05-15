@@ -12,9 +12,9 @@
 
 	const slides = $state([
 		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
+		{ played: false, source: '/testimonial-2.mp4', poster: '/testimonial-2.png' },
 		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
-		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
-		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
+		{ played: false, source: '/testimonial-2.mp4', poster: '/testimonial-2.png' },
 		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' }
 	]);
 
