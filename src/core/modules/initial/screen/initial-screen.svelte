@@ -6,10 +6,6 @@
 	import TestimonialSection from '../components/testimonial-section.svelte';
 </script>
 
-<svelte:head>
-	<title>Luana Michelly - Samba Cura - A Nova Rainha do Carnaval</title>
-</svelte:head>
-
 <main>
 	<HeroSection />
 	<AboutSection />
