@@ -13,9 +13,9 @@
 	const slides = $state([
 		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
 		{ played: false, source: '/testimonial-2.mp4', poster: '/testimonial-2.png' },
+		{ played: false, source: '/testimonial-3.mp4', poster: '/testimonial-3.png' },
 		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
-		{ played: false, source: '/testimonial-2.mp4', poster: '/testimonial-2.png' },
-		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' }
+		{ played: false, source: '/testimonial-2.mp4', poster: '/testimonial-2.png' }
 	]);
 
 	let slideListRef: HTMLVideoElement[] | null[] = [];
@@ -94,7 +94,7 @@
 				{#each slides as slideItem, index}
 					<div class="swiper-slide">
 						<div
-							class="relative min-h-[486px] w-full grow rounded-2xl border-2 border-amber-400 bg-black"
+							class="relative min-h-[486px] w-full grow rounded-2xl bg-black"
 						>
 							<!-- svelte-ignore a11y_media_has_caption -->
 							<video
@@ -124,11 +124,11 @@
 										return slideListRef[index].pause();
 									}
 								}}
-								class={`absolute top-1/2 rounded-xl left-1/2 flex h-full w-full -translate-1/2 items-center justify-center ${!slideItem.played ? "bg-black/50" : "bg-black/0"}`}
+								class={`absolute top-1/2 rounded-xl left-1/2 flex h-full w-full -translate-1/2 items-center justify-center ${!slideItem.played ? "bg-black/50 cursor-pointer" : "bg-black/0"}`}
 							>
 								{#if !slideItem.played}
 									<button
-										class="flex items-center justify-center rounded-xl bg-amber-400 px-6 py-4 text-[20px] text-white"
+										class="flex items-center justify-center rounded-xl cursor-pointer bg-amber-400 px-6 py-4 text-[20px] text-white"
 									>
 										<Icon icon="mingcute:play-fill" />
 									</button>

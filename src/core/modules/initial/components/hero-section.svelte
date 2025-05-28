@@ -1,3 +1,21 @@
+<script lang="ts">
+	import Icon from '@iconify/svelte';
+
+	const preVideo = $state({ played: false, source: '/presentation.mp4' });
+
+	let preVideoRef: HTMLVideoElement | undefined;
+
+	let preVideoWithControl = false;
+
+	const handleMouseEnter = () => {
+		preVideoWithControl = true;
+	};
+
+	const handleMouseLeave = () => {
+		preVideoWithControl = false;
+	};
+</script>
+
 <section class="relative bg-black lg:h-[100vh] lg:overflow-hidden">
 	<div class="mx-auto flex h-full max-w-[1280px] items-center">
 		<img
@@ -38,19 +56,45 @@
 				class="flex flex-col items-center self-end text-center lg:w-[30%] lg:items-start lg:text-left"
 			>
 				<!-- svelte-ignore element_invalid_self_closing_tag -->
+				<!-- svelte-ignore a11y_no_static_element_interactions -->
 				<div
-					class="lg:max-w-[] mb-8 h-[502px] w-[80%] max-w-[362px] overflow-hidden rounded-3xl bg-black"
+					onmouseenter={handleMouseEnter}
+					onmouseleave={handleMouseLeave}
+					class="relative mb-8 h-[502px] w-[80%] max-w-[362px] overflow-hidden rounded-3xl bg-black"
 				>
 					<!-- svelte-ignore a11y_media_has_caption -->
-					<!-- <video
+					<video
+						bind:this={preVideoRef}
 						class="h-full w-full object-fill [&::-webkit-media-controls-timeline]:hidden"
-						loop
 						src="/presentation.mp4"
-						playsinline
-						controls={false}
-						controlslist="play notimeline nodownload nofullscreen noremoteplayback noplaybackrate track"
-						preload="none"
-					></video> -->
+						controls={preVideoWithControl}
+					></video>
+
+					<!-- svelte-ignore a11y_click_events_have_key_events -->
+					<div
+						onclick={() => {
+							if (preVideoRef) {
+								if (!preVideo.played) {
+									preVideo.played = true;
+
+									return preVideoRef.play();
+								}
+
+								preVideo.played = false;
+
+								return preVideoRef.pause();
+							}
+						}}
+						class={`absolute top-1/2 left-1/2 flex h-full w-full -translate-1/2 items-center justify-center rounded-xl ${!preVideo.played ? 'cursor-pointer bg-black/50' : 'bg-black/0'}`}
+					>
+						{#if !preVideo.played}
+							<button
+								class="flex cursor-pointer items-center justify-center rounded-xl bg-amber-400 px-6 py-4 text-[20px] text-white"
+							>
+								<Icon icon="mingcute:play-fill" />
+							</button>
+						{/if}
+					</div>
 				</div>
 				<p class="rounded-xl bg-amber-950/50 p-2 text-sm">
 					Luana Michelly sambista desde 1990, é uma professora a mais de x anos na escola de samba,
