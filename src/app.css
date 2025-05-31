@@ -5,6 +5,10 @@
 @theme {
 	--font-sans: 'Lato', 'Helvetica', sans-serif;
 	--font-heading: "Work Sans", "Lato", "Helvetica", sans-serif;
+
+	--breakpoint-lg: 64rem;
+	--breakpoint-xl: 80rem;
+	--breakpoint-3xl: 125rem;
 }
 
 @layer base {

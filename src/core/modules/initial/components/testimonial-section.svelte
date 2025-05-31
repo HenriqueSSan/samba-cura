@@ -14,7 +14,8 @@
 		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
 		{ played: false, source: '/testimonial-2.mp4', poster: '/testimonial-2.png' },
 		{ played: false, source: '/testimonial-3.mp4', poster: '/testimonial-3.png' },
-		{ played: false, source: '/testimonial-4.mp4', poster: '/testimonial-4.png' }
+		{ played: false, source: '/testimonial-4.mp4', poster: '/testimonial-4.png' },
+		{ played: false, source: '/testimonial-5.mp4', poster: '/testimonial-5.png' },
 	]);
 
 	let slideListRef: HTMLVideoElement[] | null[] = [];
@@ -76,8 +77,8 @@
 	});
 </script>
 
-<section class="px-4 py-[96px] text-black lg:px-0">
-	<div class="mx-auto max-w-[1280px] text-center">
+<section class="py-[96px] text-black">
+	<div class="mx-auto max-w-[1280px] px-4 md:px-8 xl:px-0 text-center">
 		<h2 class="mb-6 text-5xl font-bold text-amber-400 italic">"Veja agora quem vai sambar"</h2>
 
 		<p class="mx-auto mb-6 max-w-[710px] text-2xl lg:w-[53%]">

@@ -1,5 +1,5 @@
 <script lang="ts">
-    export const benefitArr = [
+	export const benefitArr = [
 		{
 			title: 'Benefícios para seu físicos',
 			list: [
@@ -58,41 +58,41 @@
 </script>
 
 <section class="py-[96px]">
-    <div class="mx-auto max-w-[1280px] px-4 lg:px-0">
-        <h2 class="mx-auto mb-7 max-w-[710px] text-center text-3xl font-bold lg:w-[43%] lg:text-5xl">
-            O que o samba vai trazer para sua vida!
-        </h2>
-        <p
-            class="mx-auto mb-[72px] max-w-[710px] text-center text-lg font-medium lg:w-[43%] lg:text-2xl"
-        >
-            A música é contagiante e o movimento com a energia positiva tome conta do corpo e a mente.
-        </p>
+	<div class="mx-auto max-w-[1280px] px-4 md:px-8 2xl:px-0">
+		<h2 class="mx-auto mb-7 max-w-[710px] text-center text-3xl font-bold lg:w-[43%] lg:text-5xl">
+			O que o samba vai trazer para sua vida!
+		</h2>
+		<p
+			class="mx-auto mb-[72px] max-w-[710px] text-center text-lg font-medium lg:w-[43%] lg:text-2xl"
+		>
+			A música é contagiante e o movimento com a energia positiva tome conta do corpo e a mente.
+		</p>
 
-        <ul class="flex w-full flex-col items-start gap-10 lg:flex-row">
-            <li class="grow lg:w-1/2">
-                <h3 class="mb-10 text-5xl font-bold">{benefitArr[0].title}</h3>
+		<ul class="flex w-full flex-col items-start gap-10 lg:flex-row">
+			<li class="grow lg:w-1/2">
+				<h3 class="mb-10 text-5xl font-bold">{benefitArr[0].title}</h3>
 
-                <ul class="space-y-6">
-                    {#each benefitArr[0].list as benefitItem}
-                        {@render benefitItemSnippet(benefitItem.title, benefitItem.description)}
-                    {/each}
-                </ul>
-            </li>
+				<ul class="space-y-6">
+					{#each benefitArr[0].list as benefitItem}
+						{@render benefitItemSnippet(benefitItem.title, benefitItem.description)}
+					{/each}
+				</ul>
+			</li>
 
-            <!-- svelte-ignore element_invalid_self_closing_tag -->
-            <div class="hidden h-[256px] w-1 self-center rounded-full bg-amber-400 lg:block" />
+			<!-- svelte-ignore element_invalid_self_closing_tag -->
+			<div class="hidden h-[256px] w-1 self-center rounded-full bg-amber-400 lg:block" />
 
-            <li class="grow lg:w-1/2">
-                <h3 class="mb-10 text-5xl font-bold">{benefitArr[1].title}</h3>
+			<li class="grow lg:w-1/2">
+				<h3 class="mb-10 text-5xl font-bold">{benefitArr[1].title}</h3>
 
-                <ul class="space-y-6">
-                    {#each benefitArr[1].list as benefitItem}
-                        {@render benefitItemSnippet(benefitItem.title, benefitItem.description)}
-                    {/each}
-                </ul>
-            </li>
-        </ul>
-    </div>
+				<ul class="space-y-6">
+					{#each benefitArr[1].list as benefitItem}
+						{@render benefitItemSnippet(benefitItem.title, benefitItem.description)}
+					{/each}
+				</ul>
+			</li>
+		</ul>
+	</div>
 </section>
 
 {#snippet benefitItemSnippet(title: string, description: string)}
