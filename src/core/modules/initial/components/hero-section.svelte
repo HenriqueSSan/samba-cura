@@ -16,7 +16,7 @@
 	};
 </script>
 
-<section class="relative bg-black lg:h-[100vh] 3xl:h-[60vh] lg:overflow-hidden">
+<section class="3xl:h-[60vh] relative bg-black lg:h-[100vh] lg:overflow-hidden">
 	<div class="mx-auto flex h-full max-w-[1280px] items-center px-4 md:px-8 2xl:px-0">
 		<img
 			class="absolute top-0 left-0 z-20 -translate-y-1/2 lg:top-[332px] lg:z-10 lg:w-[312px]"
@@ -46,7 +46,9 @@
 				<h1 class="mb-4 text-4xl font-bold text-white italic lg:text-5xl lg:text-amber-400">
 					“Vem Sambar, O Samba Cura!”
 				</h1>
-				<p class="mx-auto max-w-[362px] rounded-xl p-2 lg:px-0 text-sm lg:max-w-none xl:bg-transparent">
+				<p
+					class="mx-auto max-w-[362px] rounded-xl p-2 text-sm lg:max-w-none lg:px-0 xl:bg-transparent"
+				>
 					Eu sou Luana Micheli, a Musa da Escola de samba de Colorado do Bras do Carnaval São Paulo
 					e Rainha de Bateria da Escola de samba Saudosa Maloca do grupo UESP.
 				</p>
@@ -60,7 +62,7 @@
 				<div
 					onmouseenter={handleMouseEnter}
 					onmouseleave={handleMouseLeave}
-					class="relative mb-8 h-[482px] w-[90%] max-w-[462px] md:max-w-[362px] overflow-hidden rounded-3xl border-2 border-amber-900 bg-black sm:h-[602px] lg:w-full lg:max-w-none lg:h-[526px]"
+					class="relative mb-8 h-[482px] w-[90%] max-w-[462px] overflow-hidden rounded-3xl border-2 border-amber-900 bg-black sm:h-[602px] md:max-w-[362px] lg:h-[526px] lg:w-full lg:max-w-[362px]"
 				>
 					<!-- svelte-ignore a11y_media_has_caption -->
 					<video
@@ -98,7 +100,7 @@
 						{/if}
 					</div>
 				</div>
-				<p class="rounded-xl p-2 lg:px-0 text-sm xl:bg-transparent">
+				<p class="rounded-xl p-2 text-sm lg:px-0 xl:bg-transparent">
 					Luana Michelly sambista desde 1990, é uma professora a mais de x anos na escola de samba,
 					com seu método de ensino e com sua íncrivel frase:
 				</p>
@@ -107,7 +109,7 @@
 		</div>
 
 		<img
-			class="absolute top-[6vh] md:top-[21vh] lg:top-0 left-1/2 z-30 max-w-[404px] -translate-x-1/2 lg:max-w-none"
+			class="absolute top-[6vh] left-1/2 z-30 max-w-[404px] -translate-x-1/2 md:top-[21vh] lg:top-0 lg:max-w-none"
 			src="/hero-highlight.png"
 			alt=""
 			fetchpriority="high"
@@ -117,7 +119,7 @@
 
 		<!-- svelte-ignore element_invalid_self_closing_tag -->
 		<div
-			class="absolute bottom-0 left-0 hidden lg:block min-h-[96px] w-full bg-linear-to-b from-transparent to-black to-50% lg:bottom-[64px] 3xl:bottom-0 lg:z-40"
+			class="3xl:bottom-0 absolute bottom-0 left-0 hidden min-h-[96px] w-full bg-linear-to-b from-transparent to-black to-50% lg:bottom-[64px] lg:z-40 lg:block"
 		/>
 	</div>
 </section>
