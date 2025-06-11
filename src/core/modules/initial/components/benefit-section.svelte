@@ -57,7 +57,7 @@
 	];
 </script>
 
-<section class="py-[96px]">
+<section class="py-[96px]" id="benefit">
 	<div class="mx-auto max-w-[1280px] px-4 md:px-8 2xl:px-0">
 		<h2 class="mx-auto mb-7 max-w-[710px] text-center text-3xl font-bold lg:w-[43%] lg:text-5xl">
 			O que o samba vai trazer para sua vida!

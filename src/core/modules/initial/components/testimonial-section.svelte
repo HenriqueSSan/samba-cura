@@ -77,7 +77,7 @@
 	});
 </script>
 
-<section class="py-[96px] text-black">
+<section class="py-[96px] text-black" id="testimonials">
 	<div class="mx-auto max-w-[1280px] px-4 md:px-8 xl:px-0 text-center">
 		<h2 class="mb-6 text-5xl font-bold text-amber-400 italic">"Veja agora quem vai sambar"</h2>
 
