@@ -24,9 +24,9 @@
 			<hr />
 			<li><a href="/#benefit">Benefícios</a></li>
 			<hr />
-			<li><a href="/#health">Samba Cura</a></li>
+			<li><a href="/#health">Samba cura</a></li>
 			<hr />
-			<li><a href="/#testimonials">Veja em Samba</a></li>
+			<li><a href="/#testimonials">Minhas alunas</a></li>
 		</ul>
 
 		<div
