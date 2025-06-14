@@ -16,7 +16,7 @@
 	};
 </script>
 
-<section class="3xl:h-[60vh] relative bg-black lg:h-[100vh] lg:overflow-hidden">
+<section class="3xl:h-[80vh] relative bg-black lg:h-[100vh] lg:overflow-hidden xl:pt-[10vh]">
 	<div class="mx-auto flex h-full max-w-[1280px] items-center px-4 md:px-8 2xl:px-0">
 		<img
 			class="absolute top-0 left-0 z-20 -translate-y-1/2 lg:top-[332px] lg:z-10 lg:w-[312px]"
@@ -62,7 +62,7 @@
 				<div
 					onmouseenter={handleMouseEnter}
 					onmouseleave={handleMouseLeave}
-					class="relative mb-8 h-[482px] w-[90%] max-w-[462px] overflow-hidden rounded-3xl border-2 border-amber-900 bg-black sm:h-[602px] md:max-w-[362px] lg:h-[526px] lg:w-full lg:max-w-[362px]"
+					class="relative mb-8 h-[482px] w-[90%] max-w-[296px] overflow-hidden rounded-3xl border-2 border-amber-900 bg-black sm:h-[602px] md:max-w-[362px] lg:h-[526px] lg:w-full lg:max-w-[296px]"
 				>
 					<!-- svelte-ignore a11y_media_has_caption -->
 					<video
@@ -93,7 +93,7 @@
 					>
 						{#if !preVideo.played}
 							<button
-								class="flex cursor-pointer items-center justify-center rounded-xl bg-amber-900 px-6 py-4 text-[20px] text-white"
+								class="flex cursor-pointer items-center justify-center rounded-xl border border-amber-900/60 bg-amber-900/50 px-6 py-4 text-[20px] text-white/80"
 							>
 								<Icon icon="mingcute:play-fill" />
 							</button>
@@ -108,18 +108,25 @@
 			</div>
 		</div>
 
-		<img
-			class="absolute top-[6vh] left-1/2 z-30 max-w-[404px] -translate-x-1/2 md:top-[21vh] lg:top-0 lg:max-w-none"
-			src="/hero-highlight.png"
-			alt=""
-			fetchpriority="high"
-			width="594"
-			height="868"
-		/>
-
-		<!-- svelte-ignore element_invalid_self_closing_tag -->
 		<div
-			class="3xl:bottom-0 absolute bottom-0 left-0 hidden min-h-[96px] w-full bg-linear-to-b from-transparent to-black to-50% lg:bottom-[64px] lg:z-40 lg:block"
-		/>
+			class="absolute top-[16vh] left-1/2 z-40 w-full md:w-auto md:max-w-[404px] -translate-x-1/2 md:top-[21vh] lg:top-0 lg:max-w-none"
+		>
+			<picture class="h-full ">
+				<source media="(min-width: 1024px)" srcset="/hero-highlight.png" width="594" height="868" />
+				<img
+					class="relative z-10"
+					src="/hero-highlight-mobile.png"
+					alt=""
+					fetchpriority="high"
+					width="1440"
+					height="1800"
+				/>
+			</picture>
+
+			<!-- svelte-ignore element_invalid_self_closing_tag -->
+			<div
+				class="absolute hidden bottom-0 left-0 z-40 min-h-[96px] w-full bg-linear-to-b from-transparent to-black to-50% lg:block"
+			/>
+		</div>
 	</div>
 </section>

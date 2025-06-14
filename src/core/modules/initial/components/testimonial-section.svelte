@@ -126,7 +126,7 @@
 							>
 								{#if !slideItem.played}
 									<button
-										class="flex cursor-pointer items-center justify-center rounded-xl bg-amber-400 px-6 py-4 text-[20px] text-white"
+										class="flex cursor-pointer items-center justify-center rounded-xl bg-amber-400/40 backdrop-blur-sm border border-amber-400/50 px-6 py-4 text-[20px] text-white/80"
 									>
 										<Icon icon="mingcute:play-fill" />
 									</button>

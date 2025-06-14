@@ -100,7 +100,7 @@
 		<img class="size-[32px] lg:size-[48px]" width="64" height="64" src="/check.svg" alt="" />
 
 		<div class="lg:pt-[6px]">
-			<h4 class="mb-2 text-lg font-bold text-amber-400 lg:text-2xl">{title}</h4>
+			<h4 class="mb-2 text-lg font-bold text-amber-500 lg:text-2xl">{title}</h4>
 			<p class="text-md leading-[24px] lg:text-xl lg:leading-[32px]">{description}</p>
 		</div>
 	</li>

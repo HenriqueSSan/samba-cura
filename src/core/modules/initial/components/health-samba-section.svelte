@@ -91,7 +91,7 @@
 				</ul>
 
 				<figure>
-					<img class="w-full max-w-full" src="/col-b-2.png" alt="" />
+					<img class="w-full max-w-full" src="/health-samba-col-1.png" alt="" />
 				</figure>
 			</div>
 
@@ -105,7 +105,7 @@
 				</ul>
 
 				<figure>
-					<img class="w-full max-w-full" src="/col-b-2.png" alt="" />
+					<img class="w-full max-w-full" src="/health-samba-col-2.png" alt="" />
 				</figure>
 			</div>
 		</div>

@@ -22,7 +22,7 @@
 					typeof window !== 'undefined'
 						? window.scrollTo({ top: 0, behavior: 'smooth' })
 						: undefined}
-				class="flex size-[56px] cursor-pointer items-center justify-center rounded-md bg-amber-600 text-black"
+				class="flex size-[56px] cursor-pointer items-center justify-center bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full"
 			>
 				<Icon class="text-[32px]" icon="ic:round-arrow-upward" />
 				<span class="sr-only">Subir</span>
@@ -32,7 +32,7 @@
 		<a
 			target="_blank"
 			href="https://api.whatsapp.com/send?phone=5511948965261"
-			class="flex size-[56px] cursor-pointer items-center justify-center rounded-md bg-green-400 text-white"
+			class="flex size-[56px] cursor-pointer items-center justify-center bg-green-400/20 backdrop-blur-sm text-white border border-white/30 rounded-full"
 		>
 			<Icon class="text-[32px]" icon="ic:baseline-whatsapp" />
 			<span class="sr-only">Whatsapp</span>
