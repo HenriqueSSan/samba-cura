@@ -18,7 +18,7 @@
 		{ played: false, source: '/testimonial-5.mp4', poster: '/testimonial-5.png' },
 	]);
 
-	let slideListRef: HTMLVideoElement[] | null[] = [];
+	let slideListRef: HTMLVideoElement[] | null[] = $state([]);
 
 	$effect.pre(() => {
 		tick().then(() => {
@@ -78,8 +78,8 @@
 </script>
 
 <section class="py-[96px] text-black" id="testimonials">
-	<div class="mx-auto max-w-[1280px] px-4 md:px-8 xl:px-0 text-center">
-		<h2 class="mb-6 text-5xl font-bold text-amber-400 italic">"Veja agora quem vai sambar"</h2>
+	<article class="mx-auto max-w-[1280px] px-4 md:px-8 xl:px-0 text-center">
+		<h2 class="mb-6 text-5xl font-bold text-orange-700 italic">"Veja agora quem vai sambar"</h2>
 
 		<p class="mx-auto mb-6 max-w-[710px] text-2xl lg:w-[53%]">
 			Abaixo estão algumas de minhas alunas que fazem parte do meu método de ensino sobre o samba.
@@ -129,6 +129,7 @@
 										class="flex cursor-pointer items-center justify-center rounded-xl bg-amber-400/40 backdrop-blur-sm border border-amber-400/50 px-6 py-4 text-[20px] text-white/80"
 									>
 										<Icon icon="mingcute:play-fill" />
+										<span class="sr-only">{slideItem.played ? `Pausar video da aluna ${index + 1}` : `Iniciar/Recomeçar video da aluna ${index + 1}`}</span>
 									</button>
 								{/if}
 							</div>
@@ -143,5 +144,5 @@
 			<div class="swiper-button-prev sr-only"></div>
 			<div class="swiper-button-next sr-only"></div>
 		</div>
-	</div>
+	</article>
 </section>

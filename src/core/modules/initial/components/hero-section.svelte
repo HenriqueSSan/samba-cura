@@ -5,7 +5,7 @@
 
 	let preVideoRef: HTMLVideoElement | undefined;
 
-	let preVideoWithControl = false;
+	let preVideoWithControl: boolean = $state(false);
 
 	const handleMouseEnter = () => {
 		preVideoWithControl = true;
@@ -17,7 +17,7 @@
 </script>
 
 <section class="3xl:h-[80vh] relative bg-black lg:h-[100vh] lg:overflow-hidden xl:pt-[10vh]">
-	<div class="mx-auto flex h-full max-w-[1280px] items-center px-4 md:px-8 2xl:px-0">
+	<article class="mx-auto flex h-full max-w-[1280px] items-center px-4 md:px-8 2xl:px-0">
 		<img
 			class="absolute top-0 left-0 z-20 -translate-y-1/2 lg:top-[332px] lg:z-10 lg:w-[312px]"
 			width="532"
@@ -96,6 +96,7 @@
 								class="flex cursor-pointer items-center justify-center rounded-xl border border-amber-900/60 bg-amber-900/50 px-6 py-4 text-[20px] text-white/80"
 							>
 								<Icon icon="mingcute:play-fill" />
+								<span class="sr-only">{preVideo ? 'Pausar video de apresentação' : 'Iniciar/Recomeçar video de apresentação'}</span>
 							</button>
 						{/if}
 					</div>
@@ -109,9 +110,9 @@
 		</div>
 
 		<div
-			class="absolute top-[16vh] left-1/2 z-40 w-full md:w-auto md:max-w-[404px] -translate-x-1/2 md:top-[21vh] lg:top-0 lg:max-w-none"
+			class="absolute top-[16vh] left-1/2 z-40 w-full -translate-x-1/2 md:top-[21vh] md:w-auto md:max-w-[404px] lg:top-0 lg:max-w-none"
 		>
-			<picture class="h-full ">
+			<picture class="h-full">
 				<source media="(min-width: 1024px)" srcset="/hero-highlight.png" width="594" height="868" />
 				<img
 					class="relative z-10"
@@ -125,8 +126,8 @@
 
 			<!-- svelte-ignore element_invalid_self_closing_tag -->
 			<div
-				class="absolute hidden bottom-0 left-0 z-40 min-h-[96px] w-full bg-linear-to-b from-transparent to-black to-50% lg:block"
+				class="absolute bottom-0 left-0 z-40 hidden min-h-[96px] w-full bg-linear-to-b from-transparent to-black to-50% lg:block"
 			/>
 		</div>
-	</div>
+	</article>
 </section>

@@ -1,5 +1,5 @@
 <section id="about" class="bg-black py-[96px] text-white">
-	<div
+	<article
 		class="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-10 px-4 md:px-8 lg:flex-row 2xl:px-0"
 	>
 		<div class="space-y-4 lg:w-1/2">
@@ -23,5 +23,5 @@
 			<img class="my-1 lg:min-h-[320px]" src="/col-b-2.png" height="392" width="252" alt="" />
 			<img class="my-1 lg:max-h-[192px]" src="/col-b-3.png" height="248" width="248" alt="" />
 		</div>
-	</div>
+	</article>
 </section>

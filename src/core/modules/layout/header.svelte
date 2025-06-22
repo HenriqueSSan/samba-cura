@@ -21,24 +21,28 @@
 		class="mx-auto flex w-full max-w-[1280px] flex-col items-center justify-between gap-3 px-4 py-3 md:px-8 lg:flex-row-reverse lg:items-start 2xl:px-0"
 	>
 		<div
-			class="lg:text-md flex w-full flex-wrap items-center justify-center lg:flex-nowrap text-sm md:flex-row lg:w-auto lg:flex-col lg:gap-2 lg:items-start"
+			class="lg:text-md flex w-full flex-wrap items-center justify-center text-sm md:flex-row lg:w-auto lg:flex-col lg:flex-nowrap lg:items-start lg:gap-2"
 		>
-			<p class="inline grow px-1 text-center lg:block whitespace-nowrap lg:text-start">Contato | +55 11 94896-5261</p>
-			<p class="inline grow px-1 text-center lg:block whitespace-nowrap lg:text-start">E-mail | luanamichelli07gmail.com</p>
+			<p class="inline grow px-1 text-center whitespace-nowrap lg:block lg:text-start">
+				Contato | +55 11 94896-5261
+			</p>
+			<p class="inline grow px-1 text-center whitespace-nowrap lg:block lg:text-start">
+				E-mail | luanamichelli07gmail.com
+			</p>
 		</div>
 
 		<nav
 			class="mx-auto flex w-full max-w-[1280px] flex-col items-center justify-between gap-3 px-4 py-3 md:px-8 lg:flex-row lg:items-start 2xl:px-0"
 		>
 			<ul
-				class="flex items-center gap-2 [&_a]:text-amber-300 [&_a]:transition-colors [&_a]:hover:text-amber-500 [&_hr]:block [&_hr]:h-[12px] [&_hr]:w-[2px] [&_hr]:rounded-full [&_hr]:border-none [&_hr]:bg-white"
+				class="flex items-center gap-2 [&_a]:text-amber-300 [&_a]:transition-colors [&_a]:hover:text-amber-500 [&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_li]:after:block [&_li]:after:h-[12px] [&_li]:after:w-[2px] [&_li]:after:rounded-full [&_li]:after:border-none [&_li]:after:bg-white [&_li]:last:after:hidden"
 			>
 				<li><a href="/#about">História</a></li>
-				<hr />
+
 				<li><a href="/#benefit">Benefícios</a></li>
-				<hr />
+
 				<li><a href="/#health">Samba cura</a></li>
-				<hr />
+
 				<li><a href="/#testimonials">Minhas alunas</a></li>
 			</ul>
 		</nav>
