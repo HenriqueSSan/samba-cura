@@ -1,4 +1,6 @@
 <script>
+	import { _ } from 'svelte-i18n';
+
 	import Icon from '@iconify/svelte';
 	import { onMount } from 'svelte';
 
@@ -22,7 +24,7 @@
 					typeof window !== 'undefined'
 						? window.scrollTo({ top: 0, behavior: 'smooth' })
 						: undefined}
-				class="flex size-[56px] cursor-pointer items-center justify-center bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full"
+				class="flex size-[56px] cursor-pointer items-center justify-center rounded-full border border-white/30 bg-white/20 text-white backdrop-blur-sm"
 			>
 				<Icon class="text-[32px]" icon="ic:round-arrow-upward" />
 				<span class="sr-only">Subir</span>
@@ -32,7 +34,7 @@
 		<a
 			target="_blank"
 			href="https://api.whatsapp.com/send?phone=5511948965261"
-			class="flex size-[56px] cursor-pointer items-center justify-center bg-green-400/20 backdrop-blur-sm text-white border border-white/30 rounded-full"
+			class="flex size-[56px] cursor-pointer items-center justify-center rounded-full border border-white/30 bg-green-400/20 text-white backdrop-blur-sm"
 		>
 			<Icon class="text-[32px]" icon="ic:baseline-whatsapp" />
 			<span class="sr-only">Whatsapp</span>
@@ -40,12 +42,11 @@
 	</div>
 
 	<div class="mx-auto flex max-w-[1280px] flex-wrap justify-between px-4 lg:px-0">
-		<p>© Copyright 2025 Luana Michelly. All rights reserved.</p>
+		<p>{$_('#layout.footer.copyright')}</p>
 		<p>
-			Developed by <a
-				target="_blank"
-				href="https://lutruvials.vercel.app"
-				class="font-bold underline">Lutruvials</a
+			{$_('#layout.footer.developed')}
+			<a target="_blank" href="https://lutruvials.vercel.app" class="font-bold underline"
+				>Lutruvials</a
 			>
 		</p>
 	</div>

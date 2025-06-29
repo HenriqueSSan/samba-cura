@@ -1,0 +1,154 @@
+{
+	"$schema": [],
+
+	"#common": {
+		"contact": "Contact",
+		"email": "Email"
+	},
+
+	"#layout": {
+		"header": {
+			"a": {
+				"item-1": "History",
+				"item-2": "Benefits",
+				"item-3": "Samba Heals",
+				"item-4": "My Students"
+			}
+		},
+
+		"footer": {
+			"copyright": "© Copyright 2025 Luana Michele. All rights reserved",
+			"developed": "Developed by"
+		}
+	},
+
+	"#section": {
+		"hero": {
+			"title": "\"Come Samba, Samba Heals!\"",
+			"description": "I am Luana Michele, the Muse of the Colorado do Bras samba school from São Paulo Carnival and Queen of the Drum Section of the Saudosa Maloca samba school from the UESP group.",
+
+			"catchphrase": {
+				"title": "Luana Michele, samba dancer since 1990, has been a teacher for over 10 years at the samba school, with her teaching method and her incredible phrase:",
+				"highlight": "\"We are all Queens and Muses\""
+			}
+		},
+		"about": {
+			"title": "See the story of our queen.",
+			"description": {
+				"item-1": "I started in Carnival as a young girl, it all began in 1990, we have a samba history. I am a passionate and dreamy samba dancer who lives for Samba.",
+				"item-2": "With my art, I work with Carnival shows, samba shows and events, and I discovered that the gift of teaching enchanted me. I always tell my students that we are all Queens and Muses, and I always say that samba heals."
+			}
+		},
+
+		"benefit": {
+			"title": "What samba will bring to your life!",
+			"description": "The music is contagious and the movement with positive energy takes over the body and mind.",
+
+			"list": {
+				"1": {
+					"title": "Physical benefits",
+					"list": [
+						{
+							"title": "Improved motor coordination",
+							"description": "Samba requires precise movements, helping with balance and agility."
+						},
+						{
+							"title": "Cardiovascular conditioning",
+							"description": "Dancing is a great aerobic exercise, improving physical endurance and heart health."
+						},
+						{
+							"title": "Muscle strengthening",
+							"description": "Legs, glutes and abdomen are intensely worked."
+						},
+						{
+							"title": "Improved posture",
+							"description": "Samba requires control of the torso and legs, helping with body awareness."
+						},
+						{
+							"title": "Calorie burning",
+							"description": "Depending on intensity, it can be an excellent exercise for weight loss."
+						}
+					]
+				},
+				"2": {
+					"title": "Emotional benefits",
+					"list": [
+						{
+							"title": "Reduction of Stress and Anxiety",
+							"description": "Dancing samba helps release endorphins, neurotransmitters responsible for the feeling of well-being, aiding in reducing stress and anxiety."
+						},
+						{
+							"title": "Improved Self-esteem and Self-confidence",
+							"description": "Regular practice of samba develops new motor skills and promotes body expression, which can increase self-esteem and personal confidence."
+						},
+						{
+							"title": "Stimulation of Emotional Expression",
+							"description": "Samba allows practitioners to express emotions in an artistic and free way, facilitating the processing of feelings and promoting emotional balance."
+						},
+						{
+							"title": "Promotion of Socialization",
+							"description": "Participating in samba classes provides social interaction, strengthening bonds and expanding networks, which contributes to feelings of belonging and emotional well-being."
+						}
+					]
+				}
+			}
+		},
+
+		"heals": {
+			"title": "\"Come Samba, Samba Heals!\"",
+			"description": "The music is contagious and the movement with positive energy will heal your wounds in body and mind.",
+
+			"list": {
+				"1": [
+					{
+						"title": "Celebrate Your Rhythm and Your Uniqueness",
+						"description": "\"In Samba Heals, every step is a celebration of your unique rhythm. Come discover that samba is the perfect way to take care of body and soul, without needing complicated workouts. Dance with us and feel the freedom!\""
+					},
+					{
+						"title": "Movement that Heals",
+						"description": "\"Here at Samba Heals, we believe movement transforms. Let samba take you and feel each beat as an opportunity to reconnect with your body, mind and spirit. Experience this healing energy!\""
+					},
+					{
+						"title": "Accessibility for All Ages",
+						"description": "\"Whatever your age, Samba Heals invites you to discover the pleasure of moving in a simple and relaxed way. Our method is designed for all women who want to take care of their bodies without pressure, just having fun to the sound of samba.\""
+					},
+					{
+						"title": "Transform Your Day with Samba",
+						"description": "\"How about starting your day with a little dance step? Samba Heals is the perfect way to combine pleasure, well-being and a touch of culture. Challenge yourself to feel samba's positive energy and transform your day!\""
+					},
+					{
+						"title": "Samba: Rhythm, Health and Self-love",
+						"description": "\"More than a dance, samba is an invitation to self-love. In Samba Heals, every movement is a step towards physical and emotional health. Come rediscover the beauty of taking care of yourself with joy and rhythm!\""
+					}
+				],
+				"2": [
+					{
+						"title": "Simplify Your Workout",
+						"description": "\"Tired of the same monotonous cardio? Samba Heals brings the lightness and fun of samba to your daily routine. Here, you exercise while smiling, dancing and connecting with women who, like you, seek a more vibrant alternative to take care of their bodies.\""
+					},
+					{
+						"title": "Rhythm and Freedom",
+						"description": "\"Feel the freedom of moving to the cadence of samba. In Samba Heals, every class is an invitation to leave worries aside and surrender to the pleasure of dancing. Allow yourself this transformative break and live the moment with intensity!\""
+					},
+					{
+						"title": "Connection and Community",
+						"description": "\"In Samba Heals, you're never alone. Join a community of women who support, inspire and have fun together, while taking care of their bodies in a unique and pleasurable way. Come be part of this empowering dance!\""
+					},
+					{
+						"title": "Samba: A New Wellness Experience",
+						"description": "\"Discover a new way to take care of yourself: without exhausting workouts and without pressure, but with lots of joy, rhythm and service designed especially for your well-being. Samba Heals is your new way to reconnect with life.\""
+					},
+					{
+						"title": "Find Your Peace in Samba's Rhythm",
+						"description": "\"Every Samba Heals class is a moment to take care of yourself, get inspired and free yourself. Let the contagious rhythm take you"
+					}
+				]
+			}
+		},
+
+		"testimonial": {
+			"title": "\"See now who will samba\"",
+			"description": "Below are some of my students who are part of my teaching method about samba."
+		}
+	}
+}

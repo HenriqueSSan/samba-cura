@@ -1,25 +1,28 @@
 <script lang="ts">
-	import { benefitArr } from './benefit-section.list';
+	import { _ } from 'svelte-i18n';
 </script>
 
 <section class="py-[96px]" id="benefit">
 	<div class="mx-auto max-w-[1280px] px-4 md:px-8 2xl:px-0">
 		<h2 class="mx-auto mb-7 max-w-[710px] text-center text-3xl font-bold lg:w-[43%] lg:text-5xl">
-			O que o samba vai trazer para sua vida!
+			{$_('#section.benefit.title')}
 		</h2>
 		<p
 			class="mx-auto mb-[72px] max-w-[710px] text-center text-lg font-medium lg:w-[43%] lg:text-2xl"
 		>
-			A música é contagiante e o movimento com a energia positiva tome conta do corpo e a mente.
+			{$_('#section.benefit.description')}
 		</p>
 
 		<div class="flex w-full flex-col items-start gap-10 lg:flex-row">
 			<article class="grow lg:w-1/2">
-				<h3 class="mb-10 text-5xl font-bold">{benefitArr[0].title}</h3>
+				<h3 class="mb-10 text-5xl font-bold">{$_(`#section.benefit.list.1.title`)}</h3>
 
 				<ul class="space-y-6">
-					{#each benefitArr[0].list as benefitItem}
-						{@render benefitItemSnippet(benefitItem.title, benefitItem.description)}
+					{#each [...new Array(5)] as _undefined, index}
+						{@render benefitItemSnippet(
+							$_(`#section.benefit.list.1.list.${index}.title`),
+							$_(`#section.benefit.list.1.list.${index}.description`)
+						)}
 					{/each}
 				</ul>
 			</article>
@@ -28,11 +31,14 @@
 			<div class="hidden h-[256px] w-1 self-center rounded-full bg-amber-400 lg:block" />
 
 			<article class="grow lg:w-1/2">
-				<h3 class="mb-10 text-5xl font-bold">{benefitArr[1].title}</h3>
+				<h3 class="mb-10 text-5xl font-bold">{$_(`#section.benefit.list.2.title`)}</h3>
 
 				<ul class="space-y-6">
-					{#each benefitArr[1].list as benefitItem}
-						{@render benefitItemSnippet(benefitItem.title, benefitItem.description)}
+					{#each [...new Array(4)] as _undefined, index}
+						{@render benefitItemSnippet(
+							$_(`#section.benefit.list.2.list.${index}.title`),
+							$_(`#section.benefit.list.2.list.${index}.description`)
+						)}
 					{/each}
 				</ul>
 			</article>

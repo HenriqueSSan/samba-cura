@@ -1,0 +1,154 @@
+{
+	"$schema": [],
+
+	"#common": {
+		"contact": "Contacto",
+		"email": "Correo electrónico"
+	},
+
+	"#layout": {
+		"header": {
+			"a": {
+				"item-1": "Historia",
+				"item-2": "Beneficios",
+				"item-3": "El Samba Cura",
+				"item-4": "Mis Alumnas"
+			}
+		},
+
+		"footer": {
+			"copyright": "© Copyright 2025 Luana Michele. Todos los derechos reservados",
+			"developed": "Desarrollado por"
+		}
+	},
+
+	"#section": {
+		"hero": {
+			"title": "«¡Ven a sambar, el Samba Cura!»",
+			"description": "Soy Luana Michele, la Musa de la escuela de samba Colorado do Bras del Carnaval de São Paulo y Reina de Batería de la escuela de samba Saudosa Maloca del grupo UESP.",
+
+			"catchphrase": {
+				"title": "Luana Michele, sambista desde 1990, es profesora desde hace más de 10 años en la escuela de samba, con su método de enseñanza y su increíble frase:",
+				"highlight": "«Todas somos Reinas y Musas»"
+			}
+		},
+		"about": {
+			"title": "Conoce la historia de nuestra reina.",
+			"description": {
+				"item-1": "Empecé en el Carnaval siendo aún una niña, todo comenzó en 1990, tenemos una historia sambística. Soy una sambista apasionada y soñadora que vive el Samba.",
+				"item-2": "Con mi arte trabajo en shows de Carnaval, sambashows y eventos, y descubrí que el don de enseñar me encantó. Siempre les digo a mis alumnas que todas somos Reinas y Musas, y siempre digo que el samba cura."
+			}
+		},
+
+		"benefit": {
+			"title": "¡Lo que el samba traerá a tu vida!",
+			"description": "La música es contagiosa y el movimiento con energía positiva se apodera del cuerpo y la mente.",
+
+			"list": {
+				"1": {
+					"title": "Beneficios físicos",
+					"list": [
+						{
+							"title": "Mejora de la coordinación motora",
+							"description": "El samba requiere precisión en los movimientos, ayudando en el equilibrio y la agilidad."
+						},
+						{
+							"title": "Acondicionamiento cardiovascular",
+							"description": "El baile es un excelente ejercicio aeróbico, mejora la resistencia física y la salud del corazón."
+						},
+						{
+							"title": "Fortalecimiento muscular",
+							"description": "Piernas, glúteos y abdomen se trabajan intensamente."
+						},
+						{
+							"title": "Mejora de la postura",
+							"description": "El samba requiere control del torso y las piernas, ayudando en la conciencia corporal."
+						},
+						{
+							"title": "Quema de calorías",
+							"description": "Dependiendo de la intensidad, puede ser un excelente ejercicio para bajar de peso."
+						}
+					]
+				},
+				"2": {
+					"title": "Beneficios emocionales",
+					"list": [
+						{
+							"title": "Reducción del Estrés y la Ansiedad",
+							"description": "Bailar samba ayuda a liberar endorfinas, neurotransmisores responsables de la sensación de bienestar, ayudando a reducir el estrés y la ansiedad."
+						},
+						{
+							"title": "Mejora de la Autoestima y Autoconfianza",
+							"description": "La práctica regular del samba desarrolla nuevas habilidades motoras y promueve la expresión corporal, lo que puede aumentar la autoestima y la confianza personal."
+						},
+						{
+							"title": "Estímulo a la Expresión Emocional",
+							"description": "El samba permite expresar emociones de forma artística y libre, facilitando el procesamiento de sentimientos y promoviendo el equilibrio emocional."
+						},
+						{
+							"title": "Promoción de la Socialización",
+							"description": "Participar en clases de samba proporciona interacción social, fortaleciendo lazos y ampliando la red de contactos, lo que contribuye a la sensación de pertenencia y bienestar emocional."
+						}
+					]
+				}
+			}
+		},
+
+		"heals": {
+			"title": "«¡Ven a sambar, el Samba Cura!»",
+			"description": "La música es contagiosa y el movimiento con energía positiva curará tus heridas en cuerpo y mente.",
+
+			"list": {
+				"1": [
+					{
+						"title": "Celebra Tu Ritmo y Tu Singularidad",
+						"description": "«En Samba Cura, cada paso es la celebración de tu ritmo único. Ven a descubrir que el samba es la manera perfecta de cuidar cuerpo y alma, sin necesidad de entrenamientos complicados. ¡Baila con nosotros y siente la libertad!»"
+					},
+					{
+						"title": "Movimiento que Cura",
+						"description": "«En Samba Cura creemos que el movimiento transforma. Deja que el samba te lleve y siente cada latido como una oportunidad para reconectarte con tu cuerpo, mente y espíritu. ¡Experimenta esta energía sanadora!»"
+					},
+					{
+						"title": "Accesibilidad para Todas las Edades",
+						"description": "«Sea cual sea tu edad, Samba Cura te invita a descubrir el placer de moverte de forma simple y relajada. Nuestro método está pensado para todas las mujeres que quieren cuidar su cuerpo sin presión, solo divirtiéndose al son del samba.»"
+					},
+					{
+						"title": "Transforma Tu Día con Samba",
+						"description": "«¿Qué tal comenzar el día con un pasito de baile? Samba Cura es la forma perfecta de combinar placer, bienestar y un toque de cultura. ¡Atrévete a sentir la energía positiva del samba y transforma tu día!»"
+					},
+					{
+						"title": "Samba: Ritmo, Salud y Amor Propio",
+						"description": "«Más que un baile, el samba es una invitación al amor propio. En Samba Cura, cada movimiento es un paso hacia la salud física y emocional. ¡Ven a redescubrir la belleza de cuidarte con alegría y ritmo!»"
+					}
+				],
+				"2": [
+					{
+						"title": "Simplifica Tu Entrenamiento",
+						"description": "«¿Cansada del mismo cardio monótono? Samba Cura trae la ligereza y diversión del samba a tu rutina. Aquí haces ejercicio sonriendo, bailando y conectando con mujeres que, como tú, buscan una alternativa más vibrante para cuidar su cuerpo.»"
+					},
+					{
+						"title": "Ritmo y Libertad",
+						"description": "«Siente la libertad de moverte al ritmo del samba. En Samba Cura, cada clase es una invitación a dejar las preocupaciones y entregarte al placer de bailar. ¡Permítete este descanso transformador y vive el momento con intensidad!»"
+					},
+					{
+						"title": "Conexión y Comunidad",
+						"description": "«En Samba Cura nunca estás sola. Únete a una comunidad de mujeres que se apoyan, inspiran y divierten juntas, mientras cuidan su cuerpo de forma única y placentera. ¡Ven a ser parte de este baile empoderador!»"
+					},
+					{
+						"title": "Samba: Una Nueva Experiencia de Bienestar",
+						"description": "«Descubre una nueva forma de cuidarte: sin entrenamientos agotadores y sin presión, pero con mucha alegría, ritmo y una atención pensada especialmente para tu bienestar. Samba Cura es tu nueva manera de reconectarte con la vida.»"
+					},
+					{
+						"title": "Encuentra Tu Paz en el Ritmo del Samba",
+						"description": "«Cada clase de Samba Cura es un momento para cuidarte, inspirarte y liberarte. Deja que el ritmo contagioso te lleve»"
+					}
+				]
+			}
+		},
+
+		"testimonial": {
+			"title": "«Mira ahora quiénes van a sambar»",
+			"description": "A continuación algunas de mis alumnas que forman parte de mi método de enseñanza sobre el samba."
+		}
+	}
+}

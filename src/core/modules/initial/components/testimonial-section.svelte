@@ -3,19 +3,16 @@
 
 	import Icon from '@iconify/svelte';
 
-	import 'swiper/css';
-	import 'swiper/css/grid';
-	import 'swiper/css/pagination';
-
 	import { Swiper } from 'swiper';
 	import { Autoplay, Grid, Pagination } from 'swiper/modules';
+	import { browser } from '$app/environment';
 
 	const slides = $state([
 		{ played: false, source: '/testimonial-1.mp4', poster: '/testimonial-1.png' },
 		{ played: false, source: '/testimonial-2.mp4', poster: '/testimonial-2.png' },
 		{ played: false, source: '/testimonial-3.mp4', poster: '/testimonial-3.png' },
 		{ played: false, source: '/testimonial-4.mp4', poster: '/testimonial-4.png' },
-		{ played: false, source: '/testimonial-5.mp4', poster: '/testimonial-5.png' },
+		{ played: false, source: '/testimonial-5.mp4', poster: '/testimonial-5.png' }
 	]);
 
 	let slideListRef: HTMLVideoElement[] | null[] = $state([]);
@@ -78,7 +75,7 @@
 </script>
 
 <section class="py-[96px] text-black" id="testimonials">
-	<article class="mx-auto max-w-[1280px] px-4 md:px-8 xl:px-0 text-center">
+	<article class="mx-auto max-w-[1280px] px-4 text-center md:px-8 xl:px-0">
 		<h2 class="mb-6 text-5xl font-bold text-orange-700 italic">"Veja agora quem vai sambar"</h2>
 
 		<p class="mx-auto mb-6 max-w-[710px] text-2xl lg:w-[53%]">
@@ -94,18 +91,20 @@
 				{#each slides as slideItem, index}
 					<div class="swiper-slide">
 						<div class="relative min-h-[486px] w-full grow rounded-2xl bg-black">
-							<!-- svelte-ignore a11y_media_has_caption -->
-							<video
-								bind:this={slideListRef[index]}
-								class="h-full w-full rounded-xl object-fill [&::-webkit-media-controls-timeline]:hidden"
-								loop
-								poster={slideItem.poster}
-								src={slideItem.source}
-								playsinline
-								controls={false}
-								controlslist="noplay notimeline nodownload nofullscreen noremoteplayback noplaybackrate track"
-								preload="none"
-							></video>
+							{#if browser}
+								<!-- svelte-ignore a11y_media_has_caption -->
+								<video
+									bind:this={slideListRef[index]}
+									class="h-full w-full rounded-xl object-fill [&::-webkit-media-controls-timeline]:hidden"
+									loop
+									poster={slideItem.poster}
+									src={slideItem.source}
+									playsinline
+									controls={false}
+									controlslist="noplay notimeline nodownload nofullscreen noremoteplayback noplaybackrate track"
+									preload="none"
+								></video>
+							{/if}
 							<!-- svelte-ignore a11y_click_events_have_key_events -->
 							<!-- svelte-ignore a11y_no_static_element_interactions -->
 							<div
@@ -126,10 +125,14 @@
 							>
 								{#if !slideItem.played}
 									<button
-										class="flex cursor-pointer items-center justify-center rounded-xl bg-amber-400/40 backdrop-blur-sm border border-amber-400/50 px-6 py-4 text-[20px] text-white/80"
+										class="flex cursor-pointer items-center justify-center rounded-xl border border-amber-400/50 bg-amber-400/40 px-6 py-4 text-[20px] text-white/80 backdrop-blur-sm"
 									>
 										<Icon icon="mingcute:play-fill" />
-										<span class="sr-only">{slideItem.played ? `Pausar video da aluna ${index + 1}` : `Iniciar/Recomeçar video da aluna ${index + 1}`}</span>
+										<span class="sr-only"
+											>{slideItem.played
+												? `Pausar video da aluna ${index + 1}`
+												: `Iniciar/Recomeçar video da aluna ${index + 1}`}</span
+										>
 									</button>
 								{/if}
 							</div>

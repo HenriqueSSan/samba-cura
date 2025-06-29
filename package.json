@@ -46,6 +46,7 @@
     "@iconify/svelte": "^5.0.0",
     "@sveltejs/adapter-static": "^3.0.8",
     "@sveltejs/adapter-vercel": "^5.7.2",
+    "svelte-i18n": "^4.0.1",
     "swiper": "^11.2.6",
     "video.js": "^8.22.0"
   }

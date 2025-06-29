@@ -8,6 +8,7 @@ export default defineConfig({
 	server: {
 		port: 3040
 	},
+
 	test: {
 		workspace: [
 			{

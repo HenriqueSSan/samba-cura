@@ -1,17 +1,18 @@
+<script>
+	import { _ } from 'svelte-i18n';
+</script>
+
 <section id="about" class="bg-black py-[96px] text-white">
 	<article
 		class="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-10 px-4 md:px-8 lg:flex-row 2xl:px-0"
 	>
 		<div class="space-y-4 lg:w-1/2">
-			<h2 class="text-3xl font-bold lg:text-5xl">Veja a história da nossa rainha.</h2>
+			<h2 class="text-3xl font-bold lg:text-5xl">{$_("#section.about.title")}</h2>
 			<p class="text-md font-medium lg:text-xl">
-				Comecei no Carnaval ainda menina,tudo começou em 1990, temos uma história sambistica, Sou
-				uma sambista apaixonada e Sonhadora que vive o Samba.
+				{$_("#section.about.description.item-1")}
 			</p>
 			<p class="text-md font-medium lg:text-xl">
-				Com a minha arte trabalho com shows de Carnaval , sambashows e eventos , e descobri que o
-				dom de ensinar me encantou, e levo sempre para as minhas alunas que todas nós somos Rainha e
-				Musas, e falo sempre que o samba cura.
+				{$_("#section.about.description.item-2")}
 			</p>
 		</div>
 
