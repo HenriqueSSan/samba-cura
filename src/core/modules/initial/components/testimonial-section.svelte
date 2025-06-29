@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { tick } from 'svelte';
+	import { _ } from 'svelte-i18n';
 
 	import Icon from '@iconify/svelte';
 
@@ -76,10 +77,12 @@
 
 <section class="py-[96px] text-black" id="testimonials">
 	<article class="mx-auto max-w-[1280px] px-4 text-center md:px-8 xl:px-0">
-		<h2 class="mb-6 text-5xl font-bold text-orange-700 italic">"Veja agora quem vai sambar"</h2>
+		<h2 class="mb-6 text-5xl font-bold text-orange-700 italic">
+			{$_('#section.testimonial.title')}
+		</h2>
 
 		<p class="mx-auto mb-6 max-w-[710px] text-2xl lg:w-[53%]">
-			Abaixo estão algumas de minhas alunas que fazem parte do meu método de ensino sobre o samba.
+			{$_('#section.testimonial.description')}
 		</p>
 
 		<!-- Slider main container -->
