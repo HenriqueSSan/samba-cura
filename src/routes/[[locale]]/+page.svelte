@@ -28,8 +28,9 @@
 	/>
 	<meta property="twitter:image" content="https://www.samba-cura.com/banner.png" />
 
-	<meta name="author" content="Luana Michelli" />
-	<meta name="creator" content="https://lutruvials.com" />
+	<meta name="author" content="Lutruvials Group." />
+	<meta name="creator" content="Lutruvials Group." />
+	<meta name="copyright" content="2025 Lutruvials Group." />
 </svelte:head>
 
 <InitialScreen />

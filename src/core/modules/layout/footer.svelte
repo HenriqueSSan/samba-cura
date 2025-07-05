@@ -45,7 +45,7 @@
 		<p>{$_('#layout.footer.copyright')}</p>
 		<p>
 			{$_('#layout.footer.developed')}
-			<a target="_blank" href="https://lutruvials.vercel.app" class="font-bold underline"
+			<a target="_blank" href="https://lutruvials.com" class="font-bold underline"
 				>Lutruvials</a
 			>
 		</p>
