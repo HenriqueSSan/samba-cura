@@ -4,6 +4,8 @@ import '$lib/i18n'; // Import to initialize. Important :)
 import { locale as i18n_locale, waitLocale as get_locale } from 'svelte-i18n';
 import type { LayoutLoad } from './$types';
 
+export const prerender = true
+
 export const load: LayoutLoad = async (request) => {
 	const params = request.params;
 	const locale = params.locale;

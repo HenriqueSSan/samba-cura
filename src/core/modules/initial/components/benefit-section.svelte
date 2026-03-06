@@ -4,7 +4,9 @@
 
 <section class="py-[96px]" id="benefit">
 	<div class="mx-auto max-w-[1280px] px-4 md:px-8 2xl:px-0">
-		<h2 class="mx-auto mb-7 max-w-[710px] text-center text-3xl font-bold lg:w-[43%] lg:text-5xl">
+		<h2
+			class="font-creative mx-auto mb-7 max-w-[710px] text-center text-3xl font-bold lg:w-[43%] lg:text-5xl"
+		>
 			{$_('#section.benefit.title')}
 		</h2>
 		<p
@@ -15,10 +17,12 @@
 
 		<div class="flex w-full flex-col items-start gap-10 lg:flex-row">
 			<article class="grow lg:w-1/2">
-				<h3 class="mb-10 text-5xl font-bold">{$_(`#section.benefit.list.1.title`)}</h3>
+				<h3 class="font-creative mb-10 text-5xl font-bold">
+					{$_(`#section.benefit.list.1.title`)}
+				</h3>
 
 				<ul class="space-y-6">
-					{#each [...new Array(5)] as _undefined, index}
+					{#each ['benefit.list.1.1', 'benefit.list.1.2', 'benefit.list.1.3', 'benefit.list.1.4', 'benefit.list.1.5'] as item, index (item)}
 						{@render benefitItemSnippet(
 							$_(`#section.benefit.list.1.list.${index}.title`),
 							$_(`#section.benefit.list.1.list.${index}.description`)
@@ -31,10 +35,12 @@
 			<div class="hidden h-[256px] w-1 self-center rounded-full bg-amber-400 lg:block" />
 
 			<article class="grow lg:w-1/2">
-				<h3 class="mb-10 text-5xl font-bold">{$_(`#section.benefit.list.2.title`)}</h3>
+				<h3 class=" font-creative mb-10 text-5xl font-bold">
+					{$_(`#section.benefit.list.2.title`)}
+				</h3>
 
 				<ul class="space-y-6">
-					{#each [...new Array(4)] as _undefined, index}
+					{#each ['benefit.list.2.1', 'benefit.list.2.2', 'benefit.list.2.3', 'benefit.list.2.4'] as item, index (item)}
 						{@render benefitItemSnippet(
 							$_(`#section.benefit.list.2.list.${index}.title`),
 							$_(`#section.benefit.list.2.list.${index}.description`)
