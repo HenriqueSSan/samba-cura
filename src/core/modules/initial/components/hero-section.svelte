@@ -23,7 +23,7 @@
 
 <section class="3xl:h-[80vh] relative bg-black lg:h-[100vh] lg:overflow-hidden xl:pt-[10vh]">
 	<article class="mx-auto flex h-full max-w-[1280px] items-center px-4 md:px-8 2xl:px-0">
-		<img
+		<!-- <img
 			class="absolute top-0 left-0 z-20 -translate-y-1/2 lg:top-[332px] lg:z-10 lg:w-[312px]"
 			width="532"
 			height="1131"
@@ -42,13 +42,15 @@
 			loading="lazy"
 			src="/feather-right.png"
 			alt=""
-		/>
+		/> -->
 
 		<div
 			class="relative z-50 flex w-full flex-col items-center justify-between gap-3 px-4 pt-[50vh] text-white lg:flex-row lg:px-0 lg:pt-0"
 		>
 			<div class="text-center lg:w-[30%] lg:text-left">
-				<h1 class="mb-4 text-4xl font-bold text-white italic lg:text-5xl lg:text-amber-400">
+				<h1
+					class="font-creative mb-4 text-4xl font-bold text-white italic lg:text-5xl lg:text-amber-400"
+				>
 					{$_('#section.hero.title')}
 				</h1>
 				<p
@@ -61,7 +63,6 @@
 			<div
 				class="flex flex-col items-center self-end text-center lg:w-[30%] lg:items-start lg:text-left"
 			>
-				<!-- svelte-ignore element_invalid_self_closing_tag -->
 				<!-- svelte-ignore a11y_no_static_element_interactions -->
 				<div
 					class="relative mb-8 h-[482px] w-[90%] max-w-[296px] overflow-hidden rounded-3xl border-2 border-amber-900 bg-black sm:h-[602px] md:max-w-[362px] lg:h-[526px] lg:w-full lg:max-w-[296px]"
@@ -97,18 +98,18 @@
 									/></g
 								></svg
 							>
-							<!-- <span class="sr-only"
+							<span class="sr-only"
 								>{presentationPlayed
 									? 'Pausar video de apresentação'
 									: 'Iniciar/Recomeçar video de apresentação'}</span
-							> -->
+							>
 						</button>
 					</div>
 				</div>
 				<p class="rounded-xl p-2 text-sm lg:px-0 xl:bg-transparent">
 					{$_('#section.hero.catchphrase.title')}
 				</p>
-				<p class="text-2xl font-bold text-amber-400 italic">
+				<p class="font-creative text-2xl font-bold text-amber-400 italic">
 					{$_('#section.hero.catchphrase.highlight')}
 				</p>
 			</div>

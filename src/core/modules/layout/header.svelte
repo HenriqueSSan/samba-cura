@@ -45,7 +45,7 @@
 			>
 				<div class="relative flex items-stretch gap-2" data-sveltekit-reload>
 					{#if show}
-						{#each locales as localeItem}
+						{#each locales as localeItem (localeItem.locale)}
 							<a href={localeItem.anchorTo} class="px-2 py-1 font-medium text-white">
 								<span>{localeItem.title}</span>
 							</a>
@@ -72,6 +72,7 @@
 
 				<button onclick={() => (show = !show)} class="cursor-pointer text-white">
 					<Icon class={`transition ${!show ? 'rotate-90' : 'rotate-0'}`} icon="ri:play-fill" />
+					<span class="sr-only">Abrir menu idiomas</span>
 				</button>
 			</div>
 
@@ -88,10 +89,14 @@
 		</div>
 
 		<nav
-			class="mx-auto flex w-full max-w-[1280px] flex-col items-center justify-between gap-3 px-4 py-3 md:px-8 lg:flex-row lg:items-start 2xl:px-0"
+			class="mx-auto flex h-[48px] w-full max-w-[1280px] flex-col items-center gap-8 px-4 py-3 md:px-8 lg:flex-row lg:items-start lg:py-0 2xl:px-0"
 		>
+			<p class="font-creative text-4xl font-bold text-white italic lg:text-5xl lg:text-amber-400">
+				Samba Cura
+			</p>
+
 			<ul
-				class="flex items-center gap-2 [&_a]:text-amber-300 [&_a]:transition-colors [&_a]:hover:text-amber-500 [&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_li]:after:block [&_li]:after:h-[12px] [&_li]:after:w-[2px] [&_li]:after:rounded-full [&_li]:after:border-none [&_li]:after:bg-white [&_li]:last:after:hidden"
+				class="flex h-full items-center gap-2 [&_a]:text-amber-300 [&_a]:transition-colors [&_a]:hover:text-amber-500 [&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_li]:after:block [&_li]:after:h-[12px] [&_li]:after:w-[2px] [&_li]:after:rounded-full [&_li]:after:border-none [&_li]:after:bg-white [&_li]:last:after:hidden"
 			>
 				<li><a href="/#about">{$_('#layout.header.a.item-1')}</a></li>
 

@@ -25,7 +25,6 @@
 				modules: [Pagination, Autoplay, Grid],
 				slidesPerView: 4,
 				loop: true,
-				// autoHeight: true,
 				spaceBetween: 12,
 
 				pagination: {
@@ -36,38 +35,10 @@
 				},
 
 				breakpoints: {
-					0: {
-						slidesPerView: 1,
-						loop: true,
-						grid: {
-							fill: 'row',
-							rows: 1
-						}
-					},
-
-					780: {
-						slidesPerView: 2,
-						grid: {
-							fill: 'row',
-							rows: 1
-						}
-					},
-
-					1024: {
-						slidesPerView: 4.5,
-						grid: {
-							fill: 'row',
-							rows: 1
-						}
-					},
-
-					1280: {
-						slidesPerView: 4,
-						grid: {
-							fill: 'row',
-							rows: 1
-						}
-					}
+					0: { slidesPerView: 1, loop: true, grid: { fill: 'row', rows: 1 } },
+					780: { slidesPerView: 2, grid: { fill: 'row', rows: 1 } },
+					1024: { slidesPerView: 4.5, grid: { fill: 'row', rows: 1 } },
+					1280: { slidesPerView: 4, grid: { fill: 'row', rows: 1 } }
 				},
 				autoplay: { delay: 3000, pauseOnMouseEnter: true }
 			});
@@ -77,7 +48,7 @@
 
 <section class="py-[96px] text-black" id="testimonials">
 	<article class="mx-auto max-w-[1280px] px-4 text-center md:px-8 xl:px-0">
-		<h2 class="mb-6 text-5xl font-bold text-orange-700 italic">
+		<h2 class="font-creative mb-6 text-5xl font-bold text-orange-700 italic">
 			{$_('#section.testimonial.title')}
 		</h2>
 
@@ -91,7 +62,7 @@
 			<div class="swiper-wrapper pb-[56px]">
 				<!-- Slides -->
 
-				{#each slides as slideItem, index}
+				{#each slides as slideItem, index (slideItem.source)}
 					<div class="swiper-slide">
 						<div class="relative min-h-[486px] w-full grow rounded-2xl bg-black">
 							{#if browser}
