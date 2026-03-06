@@ -21,7 +21,7 @@
 	};
 </script>
 
-<section class="3xl:h-[80vh] relative bg-black lg:h-[100vh] lg:overflow-hidden xl:pt-[10vh]">
+<section class="3xl:h-[80vh] relative bg-black lg:h-[88vh] lg:overflow-hidden xl:pt-[10vh]">
 	<article class="mx-auto flex h-full max-w-[1280px] items-center px-4 md:px-8 2xl:px-0">
 		<!-- <img
 			class="absolute top-0 left-0 z-20 -translate-y-1/2 lg:top-[332px] lg:z-10 lg:w-[312px]"

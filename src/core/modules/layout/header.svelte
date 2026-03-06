@@ -35,14 +35,69 @@
 	class:bg-black={isHeaderScrollDown}
 >
 	<div
-		class="mx-auto flex w-full max-w-[1280px] flex-col items-center justify-between gap-3 px-4 py-3 md:px-8 lg:flex-row-reverse lg:items-start 2xl:px-0"
+		class="mx-auto flex w-full max-w-[1280px] flex-col items-center justify-between gap-3 px-4 py-3 md:px-8 lg:flex-row lg:items-start 2xl:px-0"
 	>
+		<nav
+			class="mx-auto flex min-h-[48px] w-full max-w-[1280px] flex-col items-center gap-8 px-4 py-3 md:px-8 lg:flex-row lg:items-center lg:py-0 2xl:px-0"
+		>
+			<div class="flex w-full justify-between lg:block lg:w-auto">
+				<p class="font-creative text-4xl font-bold text-white italic lg:text-5xl lg:text-amber-400">
+					Samba Cura
+				</p>
+
+				<div class="flex items-center gap-2 rounded-full py-1 pr-3 pl-2 lg:hidden">
+					<div class="relative flex flex-col items-stretch gap-2" data-sveltekit-reload>
+						{#if show}
+							{#each locales as localeItem (localeItem.locale)}
+								<a href={localeItem.anchorTo} class="px-2 py-1 font-medium text-white">
+									<span>{localeItem.title}</span>
+								</a>
+							{/each}
+						{/if}
+
+						{#if !show}
+							{#if localeItem}
+								<a href={localeItem.anchorTo} class="px-2 py-1 font-bold text-white">
+									<span>{localeItem.title}</span>
+								</a>
+							{/if}
+						{/if}
+
+						<button
+							onclick={() => (show = !show)}
+							class:absolute={!show}
+							class:sr-only={show}
+							class="top-0 left-0 h-full w-full"
+						>
+							<span class="sr-only">Abrir menu idiomas</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<ul
+				class="flex h-full items-center gap-2 [&_a]:text-amber-300 [&_a]:transition-colors [&_a]:hover:text-amber-500 [&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_li]:after:block [&_li]:after:h-[12px] [&_li]:after:w-[2px] [&_li]:after:rounded-full [&_li]:after:border-none [&_li]:after:bg-white [&_li]:last:after:hidden"
+			>
+				<li><a href="/#about">{$_('#layout.header.a.item-1')}</a></li>
+
+				<li>
+					<a href="/#benefit">{$_('#layout.header.a.item-2')}</a>
+				</li>
+
+				<li>
+					<a href="/#health">{$_('#layout.header.a.item-3')}</a>
+				</li>
+
+				<li>
+					<a href="/#testimonials">{$_('#layout.header.a.item-4')}</a>
+				</li>
+			</ul>
+		</nav>
+
 		<div
 			class="lg:text-md flex w-full flex-wrap items-center justify-center text-sm md:flex-row lg:w-auto lg:flex-row lg:flex-nowrap lg:items-start lg:gap-2"
 		>
-			<div
-				class="flex items-center gap-2 rounded-full border border-amber-900/60 bg-amber-900/50 py-1 pr-3 pl-2"
-			>
+			<div class="hidden items-center gap-2 rounded-full py-1 pr-3 pl-2 lg:flex">
 				<div class="relative flex items-stretch gap-2" data-sveltekit-reload>
 					{#if show}
 						{#each locales as localeItem (localeItem.locale)}
@@ -77,7 +132,7 @@
 			</div>
 
 			<div
-				class="lg:text-md flex w-full flex-wrap items-center justify-center text-sm md:flex-row lg:w-auto lg:flex-col lg:flex-nowrap lg:items-start lg:gap-2"
+				class="lg:text-md hidden w-full flex-wrap items-center justify-center text-sm md:flex-row lg:flex lg:w-auto lg:flex-col lg:flex-nowrap lg:items-start lg:gap-2"
 			>
 				<p class="inline grow px-1 text-center whitespace-nowrap lg:block lg:text-start">
 					{$_('#common.contact')} | +55 11 94896-5261
@@ -87,31 +142,5 @@
 				</p>
 			</div>
 		</div>
-
-		<nav
-			class="mx-auto flex h-[48px] w-full max-w-[1280px] flex-col items-center gap-8 px-4 py-3 md:px-8 lg:flex-row lg:items-start lg:py-0 2xl:px-0"
-		>
-			<p class="font-creative text-4xl font-bold text-white italic lg:text-5xl lg:text-amber-400">
-				Samba Cura
-			</p>
-
-			<ul
-				class="flex h-full items-center gap-2 [&_a]:text-amber-300 [&_a]:transition-colors [&_a]:hover:text-amber-500 [&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_li]:after:block [&_li]:after:h-[12px] [&_li]:after:w-[2px] [&_li]:after:rounded-full [&_li]:after:border-none [&_li]:after:bg-white [&_li]:last:after:hidden"
-			>
-				<li><a href="/#about">{$_('#layout.header.a.item-1')}</a></li>
-
-				<li>
-					<a href="/#benefit">{$_('#layout.header.a.item-2')}</a>
-				</li>
-
-				<li>
-					<a href="/#health">{$_('#layout.header.a.item-3')}</a>
-				</li>
-
-				<li>
-					<a href="/#testimonials">{$_('#layout.header.a.item-4')}</a>
-				</li>
-			</ul>
-		</nav>
 	</div>
 </header>
