@@ -4,7 +4,7 @@
 
 <section id="health" class="bg-black py-[96px] text-white">
 	<article class="mx-auto max-w-[1280px] px-4 text-center md:px-8 2xl:px-0">
-		<h2 class="font-creative mb-6 text-3xl font-bold text-amber-400 italic lg:text-5xl">
+		<h2 class="font-creative mb-6 text-7xl font-bold text-amber-400 italic lg:text-5xl">
 			{$_('#section.heals.title')}
 		</h2>
 

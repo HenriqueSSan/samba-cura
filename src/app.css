@@ -7,6 +7,8 @@
 	--font-heading: 'Work Sans', 'Lato', 'Helvetica', sans-serif;
 	--font-creative: 'Oleo Script Swash Caps', 'Work Sans', 'Lato', 'Helvetica', sans-serif;
 
+	--color-black: #101010;
+
 	--breakpoint-lg: 64rem;
 	--breakpoint-xl: 80rem;
 	--breakpoint-3xl: 125rem;

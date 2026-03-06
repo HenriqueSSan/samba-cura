@@ -22,39 +22,16 @@
 </script>
 
 <section class="3xl:h-[80vh] relative bg-black lg:h-[88vh] lg:overflow-hidden xl:pt-[10vh]">
-	<article class="mx-auto flex h-full max-w-[1280px] items-center px-4 md:px-8 2xl:px-0">
-		<!-- <img
-			class="absolute top-0 left-0 z-20 -translate-y-1/2 lg:top-[332px] lg:z-10 lg:w-[312px]"
-			width="532"
-			height="1131"
-			fetchpriority="low"
-			decoding="sync"
-			loading="lazy"
-			src="/feather-left.png"
-			alt=""
-		/>
-		<img
-			class="absolute top-1/2 right-0 z-40 w-[332px] -translate-y-1/2 lg:top-[432px] lg:z-10 lg:w-[312px]"
-			width="532"
-			height="1131"
-			fetchpriority="low"
-			decoding="sync"
-			loading="lazy"
-			src="/feather-right.png"
-			alt=""
-		/> -->
-
+	<article class="mx-auto flex h-full max-w-[1280px] items-center px-0 md:px-8 2xl:px-0">
 		<div
-			class="relative z-50 flex w-full flex-col items-center justify-between gap-3 px-4 pt-[50vh] text-white lg:flex-row lg:px-0 lg:pt-0"
+			class="relative z-50 flex w-full flex-col items-center justify-between gap-3 px-0 pt-[calc(8dvh+5vh)] text-white lg:flex-row lg:px-0 lg:pt-0"
 		>
 			<div class="text-center lg:w-[30%] lg:text-left">
-				<h1
-					class="font-creative mb-4 text-4xl font-bold text-white italic lg:text-5xl lg:text-amber-400"
-				>
+				<h1 class="font-creative mb-4 text-6xl font-bold text-amber-400 italic lg:text-8xl">
 					{$_('#section.hero.title')}
 				</h1>
 				<p
-					class="mx-auto max-w-[362px] rounded-xl p-2 text-sm lg:max-w-none lg:px-0 xl:bg-transparent"
+					class="mx-auto max-w-[80%] rounded-xl p-2 text-sm lg:max-w-none lg:px-0 xl:bg-transparent"
 				>
 					{$_('#section.hero.description')}
 				</p>
@@ -109,14 +86,14 @@
 				<p class="rounded-xl p-2 text-sm lg:px-0 xl:bg-transparent">
 					{$_('#section.hero.catchphrase.title')}
 				</p>
-				<p class="font-creative text-2xl font-bold text-amber-400 italic">
+				<p class="font-creative text-4xl lg:text-2xl font-bold text-amber-400 italic">
 					{$_('#section.hero.catchphrase.highlight')}
 				</p>
 			</div>
 		</div>
 
 		<div
-			class="absolute top-[16vh] left-1/2 z-40 w-full -translate-x-1/2 md:top-[21vh] md:w-auto md:max-w-[404px] lg:top-0 lg:max-w-none"
+			class="absolute top-[16vh] left-1/2 z-40 hidden w-full -translate-x-1/2 md:top-[21vh] md:w-auto md:max-w-[404px] lg:top-0 lg:block lg:max-w-none"
 		>
 			<picture class="h-full">
 				<source media="(min-width: 1024px)" srcset="/hero-highlight.png" width="594" height="868" />

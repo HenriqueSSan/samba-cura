@@ -1,5 +1,14 @@
 <script>
 	import { _ } from 'svelte-i18n';
+
+	let columnImages = [
+		{ h: 391, w: 249, alt: '', source: '/col-1.png', class: 'lg:min-h-[320px]' },
+		{ h: 192, w: 192, alt: '', source: '/col-b-1.png', class: 'lg:min-h-[192px]' },
+		{ h: 192, w: 192, alt: '', source: '/col-2.png', class: 'lg:min-h-[192px]' },
+		{ h: 320, w: 197, alt: '', source: '/col-3.png', class: 'lg:min-h-[320px]' },
+		{ h: 197, w: 192, alt: '', source: '/col-b-2.png', class: 'lg:min-h-[320px]' },
+		{ h: 192, w: 192, alt: '', source: '/col-b-3.png', class: 'lg:min-h-[192px]' }
+	];
 </script>
 
 <section id="about" class="bg-black py-[96px] text-white">
@@ -17,48 +26,15 @@
 		</div>
 
 		<div class="grow columns-3 gap-1 lg:h-[664px] lg:w-1/4">
-			<img
-				class="my-1 w-full object-cover lg:min-h-[320px]"
-				src="/col-1.png"
-				height="391"
-				width="249"
-				alt=""
-			/>
-			<img
-				class="my-1 w-full object-cover lg:max-h-[192px]"
-				src="/col-b-1.png"
-				height="192"
-				width="192"
-				alt=""
-			/>
-			<img
-				class="my-1 w-full object-cover lg:max-h-[192px]"
-				src="/col-2.png"
-				height="192"
-				width="192"
-				alt=""
-			/>
-			<img
-				class="my-1 w-full object-cover lg:min-h-[320px]"
-				src="/col-3.png"
-				height="320"
-				width="197"
-				alt=""
-			/>
-			<img
-				class="my-1 w-full object-cover lg:min-h-[320px]"
-				src="/col-b-2.png"
-				height="197"
-				width="192"
-				alt=""
-			/>
-			<img
-				class="my-1 w-full object-cover lg:max-h-[192px]"
-				src="/col-b-3.png"
-				height="192"
-				width="192"
-				alt=""
-			/>
+			{#each columnImages as columnImage (columnImage.source)}
+				<img
+					alt={columnImage.alt}
+					width={columnImage.w}
+					height={columnImage.h}
+					src={columnImage.source}
+					class={['my-1 w-full object-cover', columnImage.class]}
+				/>
+			{/each}
 		</div>
 	</article>
 </section>

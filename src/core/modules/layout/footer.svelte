@@ -16,7 +16,7 @@
 	});
 </script>
 
-<footer class="bg-amber-400 py-[36px] text-black">
+<footer class="bg-black py-[36px] text-white">
 	<div class="fixed right-8 bottom-8 z-[2000] flex items-center gap-3">
 		{#if showUpBtn}
 			<button
@@ -43,7 +43,7 @@
 
 	<div class="mx-auto flex max-w-[1280px] flex-wrap justify-between px-4 lg:px-0">
 		<p>{$_('#layout.footer.copyright')}</p>
-		<p>
+		<p class="sr-only">
 			{$_('#layout.footer.developed')}
 			<a target="_blank" href="https://lutruvials.com" class="font-bold underline"
 				>Lutruvials</a
